@@ -2,8 +2,6 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "CommonJS",
-    "declaration": true,
-    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,7 +13,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["src/*"]
-    }
+    },
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "test", "examples"]

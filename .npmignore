@@ -1,0 +1,11 @@
+src/
+test/
+examples/
+.github/
+.vscode/
+.editorconfig
+.eslintrc
+.gitignore
+jest.config.js
+rollup.config.js
+tsconfig.json

@@ -17,13 +17,13 @@ A flexible and powerful HTTP client for TypeScript applications with a clean, Pr
 ## Installation
 
 ```bash
-npm install http-client-ts
+npm install cios
 ```
 
 ## Basic Usage
 
 ```typescript
-import { ApiClient } from 'http-client-ts';
+import { ApiClient } from 'cios';
 
 // Create an API client instance
 const api = new ApiClient('https://api.example.com');
@@ -369,7 +369,7 @@ global.URL = URL;
 global.URLSearchParams = URLSearchParams;
 
 // Now you can use the client
-import { ApiClient } from 'http-client-ts';
+import { ApiClient } from 'cios';
 const api = new ApiClient('https://api.example.com');
 ```
 

@@ -1,2 +1,2 @@
-export * from './types';
-export { CancelToken } from './CancelToken';
+export * from "./types";
+export { CancelToken } from "./CancelToken";
