@@ -1,0 +1,57 @@
+{
+    "name": "cios",
+    "version": "1.0.0",
+    "description": "A flexible and feature-rich HTTP client for TypeScript applications",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "lint": "eslint 'src/**/*.ts'",
+        "format": "prettier --write 'src/**/*.ts'",
+        "prepublishOnly": "npm run build",
+        "clean": "rimraf dist"
+    },
+    "keywords": [
+        "http",
+        "client",
+        "fetch",
+        "api",
+        "rest",
+        "axios",
+        "typescript",
+        "request"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/minhblues/cios.git"
+    },
+    "bugs": {
+        "url": "https://github.com/minhblues/cios/issues"
+    },
+    "homepage": "https://github.com/minhblues/cios#readme",
+    "devDependencies": {
+        "@types/jest": "^29.5.0",
+        "@types/node": "^18.15.5",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "eslint": "^8.36.0",
+        "jest": "^29.5.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "jest-fetch-mock": "^3.0.3",
+        "prettier": "^2.8.6",
+        "rimraf": "^4.4.1",
+        "ts-jest": "^29.0.5",
+        "typescript": "^5.0.2"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
