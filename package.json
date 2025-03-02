@@ -1,21 +1,18 @@
 {
-    "name": "cios",
-    "version": "1.0.0",
+    "name": "@wiuy/cios",
+    "version": "1.3.1",
     "description": "A flexible and feature-rich HTTP client for TypeScript applications",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "unpkg": "dist/umd/cios.min.js",
-    "types": "dist/index.d.ts",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist",
         "LICENSE",
         "README.md"
     ],
     "scripts": {
-        "build": "rimraf dist && rollup -c",
-        "build:dev": "rollup -c --environment BUILD:development",
-        "build:prod": "rollup -c --environment BUILD:production",
-        "dev": "rollup -c -w",
+        "build": "tsup",
+        "build:metafile": "tsup --metafile",
+        "dev": "tsup --watch",
         "test": "jest",
         "lint": "eslint 'src/**/*.ts'",
         "format": "prettier --write 'src/**/*.ts'",
@@ -32,7 +29,7 @@
         "typescript",
         "request"
     ],
-    "author": "Your Name",
+    "author": "Minh Blues",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -43,9 +40,6 @@
     },
     "homepage": "https://github.com/minhblues/cios#readme",
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.2",
-        "@rollup/plugin-node-resolve": "^16.0.0",
-        "@rollup/plugin-typescript": "^12.1.2",
         "@types/jest": "^29.5.0",
         "@types/node": "^18.15.5",
         "@typescript-eslint/eslint-plugin": "^5.56.0",
@@ -55,16 +49,11 @@
         "jest-environment-jsdom": "^29.7.0",
         "jest-fetch-mock": "^3.0.3",
         "prettier": "^2.8.6",
-        "rimraf": "^4.4.1",
-        "rollup": "^4.34.8",
-        "rollup-plugin-dts": "^6.1.1",
         "ts-jest": "^29.0.5",
+        "tsup": "^8.4.0",
         "typescript": "^5.0.2"
     },
     "engines": {
         "node": ">=14.0.0"
-    },
-    "dependencies": {
-        "@rollup/plugin-terser": "^0.4.4"
     }
 }

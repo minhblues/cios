@@ -10,11 +10,12 @@
     "sourceMap": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    },
+    // "baseUrl": ".",
+    // "paths": {
+    //   "*": ["src/*"]
+    // },
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "test", "examples"]
+  // "exclude": ["node_modules", "dist", "test", "examples"]
+  "exclude": ["node_modules"]
 }
